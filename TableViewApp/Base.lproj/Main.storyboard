@@ -33,7 +33,12 @@
                                 </constraints>
                                 <color key="tintColor" red="0.53453216179999996" green="0.65384507619999999" blue="0.65780958749999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="ADD"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add Student">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onAddClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nz7-N4-ZrP"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qbE-66-HZu">
                                 <rect key="frame" x="16" y="140" width="378" height="707"/>
@@ -54,6 +59,10 @@
                             <constraint firstItem="Ifx-j1-WYv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="qxU-5G-ip0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameField" destination="Ifx-j1-WYv" id="ra1-9e-S1d"/>
+                        <outlet property="nameSubjecTableView" destination="qbE-66-HZu" id="wUN-rg-5t4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
