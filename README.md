@@ -9,3 +9,10 @@ While working with table views one needs to decide :
 
 Default view of a row is provided using UITableViewCell
 
+A cell is a container of view for each row of TableView
+
+All the above things are achieved using Delegation pattern
+
+To Decide all the above things there is no direct property attached with a tableView control, instead a protocol is declared which has methods to decide these things.
+
+A class which implements the given protocol becomes a delegate for tableView to decide number of rows, number of sections and view for each row.
